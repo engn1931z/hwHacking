@@ -1,4 +1,4 @@
-# hwHacking
+# hwProbing
 OBD-II Queries Homework Assignment for ENGN1931Z
 
 You want to use a low-cost CAN-bus reader to query relevant vehicle information through [OBD-II PID](https://en.wikipedia.org/wiki/OBD-II_PIDs) requests. To make sure you understand the command syntax, you decide to first query the available [Mode 1 PIDs](https://en.wikipedia.org/wiki/OBD-II_PIDs#Mode_01) on your own car.
@@ -15,6 +15,6 @@ Please write a python script that performs the following actions:
 
 * c. Queries the Control Module Voltage and prints the value in Volts for each responding ECU. (*Hint: these values should be greater than 12 Volts.*)
 
-`hw_hacking.py` is a template code for the assignment. **Please review the comments at the top of that file.**  `submit.py` is the script that will submit your code to the autograder.
+`hw_probing.py` is a template code for the assignment. **Please review the comments at the top of that file.**  `submit.py` is the script that will submit your code to the autograder.
 
 Please note you are welcome to try this assignment as many times as you would like. (There is no penalty for failed attempts, because I wanted to encourage you to practice, test, and debug.) **However, please make sure to obey the class collaboration policy --- do not share your code with others; please write and debug on your own!**
