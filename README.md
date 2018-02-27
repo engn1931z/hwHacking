@@ -9,7 +9,7 @@ To do this, you have setup a web app that can send CAN commands to your car, and
 
 Please write a python script that performs the following actions:
 
-* a. Finds the supported Mode 01 PIDs by sequentially sending the "supported PIDs" commands (e.g. `00`, `20`, `40`, ... `A0`, `C0`,`E0`) as described [here](https://en.wikipedia.org/wiki/OBD-II_PIDs), parses the [bit-encoded responses](https://en.wikipedia.org/wiki/OBD-II_PIDs#Mode_1_PID_00), and writes a list of all supported PIDs to the file `supportedPIDs.txt`. *NB: You can double check the validity of your code by seeing if the supported PIDs actually work, but you cannot brute force a solution - credit will only be given for correctly parsing the reply data from the Support PIDs queries.)
+* a. Finds the supported Mode 01 PIDs by sequentially sending the "supported PIDs" commands (e.g. `00`, `20`, `40`, ... `A0`, `C0`,`E0`) as described [here](https://en.wikipedia.org/wiki/OBD-II_PIDs), parses the [bit-encoded responses](https://en.wikipedia.org/wiki/OBD-II_PIDs#Mode_1_PID_00), and return a list of all supported PIDs. *NB: You can double check the validity of your code by seeing if the supported PIDs actually work, but you cannot brute force a solution - credit will only be given for correctly parsing the reply data from the Support PIDs queries.)
 
 * b. Queries the Ambient Air Temperature and prints the value in degrees Celsius.
 
