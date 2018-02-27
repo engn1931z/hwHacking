@@ -1,10 +1,10 @@
 #Run this script at the end when you are ready to submit your homework to the autograder.
 
-import hw_hacking  # imports your hw_sniffing module
+import hw_probing  # imports your hw_sniffing module
 import requests
 
-submissionFile=open('hw_hacking.py','r')
-postParams=hw_hacking.yourSubmission()
+submissionFile=open('hw_probing.py','r')
+postParams=hw_probing.yourSubmission()
 
 with open('token','a+') as tokenFile:
 	token=tokenFile.read();
