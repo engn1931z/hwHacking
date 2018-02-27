@@ -27,4 +27,4 @@ controlModuleVoltage=[???]; #REPLACE THIS BY A LIST OF FLOATS
 ##################################################################
 def yourSubmission():
 	return {'email':email,'hw':'hacking','supportedPIDs':json.dumps(supportedPIDs),'ambientAirTemperature':ambientAirTemperature,'controlModuleVoltage':json.dumps(controlModuleVoltage)}
-	# Convert the lists into json strings, so that they can be parsed as javascript array
+	# Convert the lists into json strings, so that they can be parsed as javascript arrays
