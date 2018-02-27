@@ -9,13 +9,13 @@ postParams=hw_probing.yourSubmission()
 with open('token','a+') as tokenFile:
 	token=tokenFile.read();
 	if len(token)<6: 
-		tokenResponse=requests.post("https://script.google.com/a/brown.edu/macros/s/AKfycbyJeqzwq7MxtCExb5PVE_05E4soG4iNBrHf9-lZ6f52v9Lz5vo/exec",data={'requestingToken':1,'email':postParams["email"]});
+		tokenResponse=requests.post("https://script.google.com/macros/s/AKfycbyJeqzwq7MxtCExb5PVE_05E4soG4iNBrHf9-lZ6f52v9Lz5vo/exec",data={'requestingToken':1,'email':postParams["email"]});
 		token=tokenResponse.text;
 		tokenFile.write(token)
 
 postParams["token"]=token
 postParams["submission"]=submissionFile.read()
-subResponse=requests.post("https://script.google.com/a/brown.edu/macros/s/AKfycbyJeqzwq7MxtCExb5PVE_05E4soG4iNBrHf9-lZ6f52v9Lz5vo/exec",data=postParams)
+subResponse=requests.post("https://script.google.com/macros/s/AKfycbyJeqzwq7MxtCExb5PVE_05E4soG4iNBrHf9-lZ6f52v9Lz5vo/exec",data=postParams)
 responseFile=open('submissionResponse.txt','wb')
 responseFile.write(subResponse.text.encode('utf-8'))
 print(subResponse.text)
