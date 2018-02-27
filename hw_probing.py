@@ -1,4 +1,4 @@
-# Homework Hacking Template Code
+# Homework Probing Template Code
 #
 # Your goal is to:
 #  - Find all the supported Mode 01 PIDs and store them as a list of strings.
@@ -24,5 +24,5 @@ controlModuleVoltage=[???]; #REPLACE THIS BY A LIST OF FLOATS
 ### DO NOT CHANGE THE FOLLOWING - Used in submission process
 ##################################################################
 def yourSubmission():
-	return {'email':email,'hw':'hacking','supportedPIDs':json.dumps(supportedPIDs),'ambientAirTemperature':ambientAirTemperature,'controlModuleVoltage':json.dumps(controlModuleVoltage)}
+	return {'email':email,'hw':'probing','supportedPIDs':json.dumps(supportedPIDs),'ambientAirTemperature':ambientAirTemperature,'controlModuleVoltage':json.dumps(controlModuleVoltage)}
 	# Convert the lists into json strings, so that they can be parsed as javascript arrays
