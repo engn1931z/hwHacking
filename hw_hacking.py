@@ -1,7 +1,5 @@
 # Homework Hacking Template Code
 #
-# This initial helper code will 
-#
 # Your goal is to:
 #  - Find all the supported Mode 01 PIDs and store them as a list of strings.
 #  - Query the ambient air temperature and return the value in degress Celcius as a float.
