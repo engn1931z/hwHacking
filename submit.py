@@ -1,6 +1,6 @@
 #Run this script at the end when you are ready to submit your homework to the autograder.
 
-import hw_probing  # imports your hw_sniffing module
+import hw_probing  # imports your hw_probing module
 import requests
 
 submissionFile=open('hw_probing.py','r')
